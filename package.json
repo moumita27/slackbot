@@ -1,0 +1,35 @@
+{
+  "name": "standup-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "dependencies": { "express": "^4.18.0", "node-fetch": "^2.6.9" }
+}
+```
+
+5. Once deployed, Render gives you a public URL like `https://standup-bot-xxxx.onrender.com`
+
+---
+
+## 🔗 Step 5: Connect Everything
+
+1. Go back to **[api.slack.com/apps](https://api.slack.com/apps)** → your app → **Slash Commands**
+2. Edit the `/standup` command and paste your Render URL + `/standup` as the **Request URL**
+   - e.g. `https://standup-bot-xxxx.onrender.com/standup`
+3. Click **Save**
+
+---
+
+## 📲 Step 6: Install the Bot to Your Workspace
+
+1. In the left sidebar go to **"Install App"**
+2. Click **"Install to Workspace"** and click **Allow**
+3. Your bot is live! 🎉
+
+---
+
+## ✅ Test It
+
+Open any Slack channel and type:
+```
+/standup
